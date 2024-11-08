@@ -1,0 +1,26 @@
+data:
+  allowedHosts:
+    hosts:
+      - ${host}
+      - ${tunnel_method.tunnel_host}
+  registries:
+    oss:
+      enabled: true
+    cloud:
+      enabled: false
+  connectorSubtype: database
+  connectorType: source
+  definitionId: ab01b591-2ec8-47ea-ba8b-bd07c3364bec
+  dockerImageTag: 0.1.0
+  dockerRepository: airbyte/source-as400
+  githubIssueLabel: source-as400
+  icon: as400.svg
+  license: MIT
+  name: As400
+  releaseDate: TODO
+  supportLevel: community
+  releaseStage: alpha
+  documentationUrl: https://docs.airbyte.com/integrations/sources/as400
+  tags:
+    - language:java
+metadataSpecVersion: "1.0"

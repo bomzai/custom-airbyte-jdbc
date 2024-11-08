@@ -1,0 +1,36 @@
+{
+  "documentationUrl": "https://docs.airbyte.com/integrations/sources/as400",
+  "connectionSpecification": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "As400 Source Spec",
+    "type": "object",
+    "required": ["host", "username", "password", "library"],
+    "properties": {
+      "host": {
+        "title": "Host",
+        "description": "Hostname of the database.",
+        "type": "string",
+        "order": 0
+      },
+      "username": {
+        "title": "Username",
+        "description": "Username to use to access the database.",
+        "type": "string",
+        "order": 1
+      },
+      "password": {
+        "title": "Password",
+        "description": "Password associated with the username.",
+        "type": "string",
+        "airbyte_secret": true,
+        "order": 2
+      },
+      "library": {
+        "title": "library",
+        "description": "library associated with the database.",
+        "type": "string",
+        "order": 3
+      }
+    }
+  }
+}
